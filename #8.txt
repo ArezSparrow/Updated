@@ -16,7 +16,7 @@ def Armstrong(Number): # Check Armstrong
     sum = 0
     for x in str(Number):
         sum += int((x))**3
-    if sum == Number**3:
+    if sum == Number:
         print(Number,"is an Armstrong")
     else:
         print(Number , "is not an armstrong")
