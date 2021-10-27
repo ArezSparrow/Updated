@@ -4,6 +4,16 @@ def GetSquare(X,N): #Gets Square of X W.R.T N
    for x in range(1,(N+1)):
         G = (X)**x
    return G
+def GetSquareN(X,N): # Square When -ve involves
+    sum = 0
+    for x in range(1,(N+1)):
+        if x % 2 == 0:
+            Sq = ((X) ** (x))
+            sum -= Sq
+        else:
+            Sq = ((X) ** (x))
+            sum += Sq
+    return sum
 def getfactorial(N): #Gets The Factorial
     x = 1
     for i in range(1,N+1):
@@ -12,7 +22,7 @@ def getfactorial(N): #Gets The Factorial
 def PrintS1(X,N): #Q1
     return GetSquare(X,N) + 1
 def PrintS2(X,N): #Q2
-    return 1-GetSquare(X,N)
+    return 1-GetSquareN(X,N)
 def PrintS3(X,N): #Q3
     sum = 0
     for x in range(1,N+1):
