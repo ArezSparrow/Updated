@@ -1,0 +1,15 @@
+N1 = int(input("Enter N1 : "))
+N2 = int(input("Enter N2 : "))
+S1,S2 = [],[]
+str1 = []
+for i in range(1,N1+1):
+    if N1%i == 0:
+        S1.append(i)
+for x in range(1,N2+1):
+    if N2%x == 0:
+        S2.append(x)
+for x in S1:
+    if x in S2:
+        str1 = x
+print("LCM : ",(N1*N2//str1))
+print("GCD : ",str1)

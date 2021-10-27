@@ -1,0 +1,10 @@
+a = int(input("Enter First Number : "))
+b = int(input("Enter Second Number : "))
+if a==b:
+    print("Both are equal")
+elif a > b:
+    print(a," is Greater")
+    print(b," is lesser")
+elif b > a:
+    print(b," is greater")
+    print(a," is lesser")		

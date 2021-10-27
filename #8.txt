@@ -1,0 +1,26 @@
+def PerfectNumber(Number): #Check Perfect Number
+    sum = 0
+    for x in range(1,(Number+1)):
+        if Number % x == 0:
+            sum += x
+    if sum/2 == Number:
+        print(Number," is a perfect number")
+    else:
+        print(Number," is not a perfect number")
+def Palindrome(Number): # Check palindrome
+    if str(Number)[::-1] == str(Number):
+        print(Number," is a palindrome")
+    else:
+        print(Number, " is not a palindrome")
+def Armstrong(Number): # Check Armstrong
+    sum = 0
+    for x in str(Number):
+        sum += int((x))**3
+    if sum == Number**3:
+        print(Number,"is an Armstrong")
+    else:
+        print(Number , "is not an armstrong")
+Number = int(input("Enter Number : "))
+Palindrome(Number)
+PerfectNumber(Number)
+Armstrong(Number)

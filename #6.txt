@@ -1,0 +1,5 @@
+lst = ["A","B","C","D","E"]
+for x in range(len(lst)):
+    for y in range(0,1+x):
+        print(lst[y], end = "")
+    print()

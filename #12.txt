@@ -1,0 +1,13 @@
+Alphabets = input("Enter Sentence : ")
+vowels = "a,e,i,o,u"
+v,c,up,lw = [],[],[],[]
+for x in Alphabets:
+    if x in vowels:
+        v.append(x)
+    else:
+        c.append(x)
+    if x == str.upper(x):
+        up.append(x)
+    else:
+        lw.append(x)
+print("Vowels :{} Consonants:{} Upper :{} Lower :{}".format(v,c,up,lw))

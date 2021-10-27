@@ -1,0 +1,5 @@
+Sentence = input("Enter Text : ")
+if Sentence[::-1].lower() == Sentence.lower():
+    print(Sentence.lower()," is a palindrome")
+else:
+    print("Not a palindrome")

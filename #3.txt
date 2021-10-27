@@ -1,0 +1,23 @@
+a = int(input("Enter First Number : "))
+b = int(input("Enter Second Number : "))
+c = int(input("Enter Third Number : "))
+if a==b==c:
+    print("Both are equal")
+elif a > b and a>c:
+    print(a," is Greater")
+    if b > c:
+        print(c," is lesser")
+    if c > b:
+        print(b," is lesser")
+elif b > a and b>c:
+    print(b," is greater")
+    if a>c:
+        print(c," is lesser")
+    if c>a:
+        print(a,"is lesser")
+elif c>a and c>b:
+    print(c,"is greater")
+    if a>b:
+        print(b,"is lesser")
+    if b>a:
+        print(a,"is lesser")
